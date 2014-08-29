@@ -1,3 +1,6 @@
+#include<string>
+#include<iostream>
+using namespace std;
 void reverseWords(string &s) {
        
         string sum;
