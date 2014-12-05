@@ -1,7 +1,4 @@
-#include <iostream>
-#include <vector>
-#include <algorithm>
-using namespace std;
+
  // Definition for an interval.
   struct Interval {
       int start;
@@ -48,15 +45,7 @@ vector<Interval> merge(vector<Interval> &intervals) {
         QuikSort(intervals,start,mid);
         QuikSort(intervals,mid+1,end);
     };
-void print(vector<Interval> &intervals)
-{
-		vector<Interval>::iterator it = intervals.begin();
-		while (it != intervals.end()) {
-		    cout << it->start << "  ";
-				++it;
-		}
-		cout  << endl;
-}
+
     vector<Interval>::iterator Partition(vector<Interval> &intervals,vector<Interval>::iterator start, vector<Interval>::iterator end)
     {
         vector<Interval>::iterator pivot = end-1;
@@ -73,16 +62,3 @@ void print(vector<Interval> &intervals)
         return i;
     };
     
-int main()
-{
-		vector<Interval> intervals;
-		intervals.push_back(Interval(6,5));
-		intervals.push_back(Interval(2,4));
-		intervals.push_back(Interval(5,5));
-		intervals.push_back(Interval(1,4));
-		intervals.push_back(Interval(3,5));
-    
-		Sort(intervals);
-		//for (int i=0;i<5;++i)
-			//	cout << intervals[i].start << endl;
-}
