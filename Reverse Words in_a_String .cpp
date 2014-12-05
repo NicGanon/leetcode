@@ -1,6 +1,4 @@
-#include<string>
-#include<iostream>
-using namespace std;
+
 void reverseWords(string &s) {
        
         string sum;
@@ -24,15 +22,3 @@ void reverseWords(string &s) {
     }
 }
 
-int main()
-{
-    string s1 = "";
-    string s2 = "the key is bule";
-    string s3 = " hello    wold"
-    
-    reverseWords(s1);
-    reverseWords(s2);
-    reverseWords(s3);
-
-    return 0;    
-}
